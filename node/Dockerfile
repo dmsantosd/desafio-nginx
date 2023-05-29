@@ -13,4 +13,6 @@ COPY ["index.js", "repository.js", "package.json", "package-lock.json", "./"]
 
 RUN npm install 
 
+VOLUME ["/usr/src/app/node_modules"]
+
 EXPOSE 3000
